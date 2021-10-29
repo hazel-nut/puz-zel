@@ -455,7 +455,7 @@ nav.navigation a.button {
   color:#404040;
 }
 #archive .group .value .title a:hover {
-  color: #0366d6;
+  color: var(--accent-color-light);
 }
 #archive .group .value .tags {
   display: inline;
@@ -469,7 +469,8 @@ nav.navigation a.button {
   margin-right: 3px;
 }
 #archive .group .value .tags a:hover {
-  color: #0366d6;
+  color: var(--accent-color-contrast);
+  background: var(--accent-color-dark);
 }
 
 /* taxonomy */
