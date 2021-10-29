@@ -3,24 +3,17 @@
         {{ partial "social.html" . }}
     {{ end }}
 
-    <div class="copyright">
-    {{ with .Site.Params.copyright }}
-        {{ . | markdownify }}
-    {{ else }}
-       © Copyright 
-       {{ now.Format "2006"}} 
-       <span class="split">
-        {{ partial "svgs/heart.svg" (dict "fill" "#bbbbbb" "width" 15 "height" 15 ) }}
-       </span>
-       {{ .Site.Params.Author }}
-    {{ end }}
+    <br/>
+
+    <span class="split">
+        {{ partial "svgs/heart.svg" (dict "fill" "#bbbbbb" "width" 20 "height" 20 ) }}
+    </span>
+
+    <div class="powerby">
+        <div>Hugo theme modified from <a href="https://github.com/nodejh/hugo-theme-mini">nodejh's hugo-theme-mini</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
 
-    {{ if ne .Site.Params.showPowerBy false }}
-      <div class="powerby">
-        {{ i18n "poweredBy" | safeHTML }}
-      </div>
-    {{ end }}
 </footer>
 
 {{ range .Site.Params.customJS }}

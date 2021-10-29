@@ -1,13 +1,21 @@
 <nav class="navigation">
-	{{ if not .IsHome }}
-		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
-	{{ end }}
+{{ if not .IsHome }}
+    <a href="{{ "/" | relURL }}"> <span class="arrow">←</span> <b>home</b></a>
+{{ end }}
 
-	{{ range $element := .Site.Params.Links }}
-		<a href="{{ $element.path }}">{{ $element.name }}</a>
-	{{ end }}
+{{ range .Site.Params.Links }}
+    <a href="{{ .url }}">{{ .name }}</a>
+{{ end }}
 
-	{{ if .Site.Params.enableRSS }}
-	  <a class="button" href="{{ .Site.RSSLink }}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}{{ i18n "subscribe" }}{{ end }}</a>
-	{{ end }}
+{{ range $term, $taxonomy := .Site.Taxonomies }}
+    <a href="{{ (printf "/%s" $term) | relURL }}">{{ $term }}</a>
+{{ end }}
+
+{{ range .Site.Sections }}
+    <a {{ with .Params.button }}class="button"{{ end }} href="{{ .Permalink }}">{{ lower .Title }}</a>
+{{ end }}
+
+{{ if .Site.Params.enableRSS }}
+    <a class="button" href="{{ .Site.RSSLink }}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}{{ i18n "subscribe" }}{{ end }}</a>
+{{ end }}
 </nav>

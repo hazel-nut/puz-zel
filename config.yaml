@@ -1,8 +1,9 @@
-baseURL: http://example.org/
 languageCode: en-us
 title: puz-zel
-theme: mini
 paginate: 3
+
+taxonomies:
+    tag: tags
 
 markup:
     goldmark:
@@ -14,21 +15,13 @@ social:
     twitter: https://twitter.com/hazelnym
 
 params:
-    author: Hazel Virdó
-    bio: yes hello this is puzzle
-    description: description
-    enableRSS: true
+    subtitle: yes hello this is puzzle
+    enableRSS: false
     enableComments: false
     enableGoogleAnalytics: false
-    showPowerBy: false
-    copyright: 'hello'
 
     dateFormat: "2 January 2006"
 
-    links:
-    - name: Example 1
-      path: /example
-    - name: Example 2
-      path: /example
-    - name: Example 3
-      path: /example
+#    links:
+#    - name: example
+#      url: example.com
