@@ -366,7 +366,7 @@ nav.navigation a.button {
 }
 
 #single {
-  max-width: 680px;
+  max-width: 800px;
   margin: 60px auto 0 auto;
   padding: 0 64px;
 }
@@ -422,7 +422,7 @@ nav.navigation a.button {
 
 
 #archive {
-  max-width: 580px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -508,14 +508,14 @@ nav.navigation a.button {
 
 /* section page */
 #section {
-  max-width: 580px;
+  max-width: 800px;
   margin: 48px auto 0 auto;
   padding: 0 12px;
 }
 
 /* 404 page */
 #page-404 {
-  max-width: 580px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
 }
