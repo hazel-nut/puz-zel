@@ -288,6 +288,7 @@ nav.navigation a.button {
 }
 
 #list-page .postbar {
+  position: relative;
   background: #ddd;
   border-radius: 15px;
   padding: 2px 8px 2px 8px;
@@ -306,8 +307,11 @@ nav.navigation a.button {
 }
 
 #list-page .date {
-  transform: translateY(25%);
+  position: absolute;
+  top: 50%;
+  left: 74%;
   width: 25%;
+  transform: translateY(-50%);
   float: right;
   text-align: right;
   color: var(--font-dark);

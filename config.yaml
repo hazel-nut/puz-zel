@@ -2,6 +2,9 @@ languageCode: en-us
 title: puz-zel
 paginate: 3
 
+permalinks:
+    posts: /:filename
+
 taxonomies:
     tag: tags
 
