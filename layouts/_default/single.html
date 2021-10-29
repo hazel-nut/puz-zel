@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<section id="single">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <div class="tip">
+        Published on <time datetime="{{ .PublishDate }}">{{ time.Format .Site.Params.dateFormat .PublishDate }}</time>
+        {{ if (isset .Params "lastmod") }}
+            <span class="split">·</span>
+            Updated on <time datetime="{{- .Lastmod -}}">{{ time.Format .Site.Params.dateFormat .Lastmod }}</time>
+        {{ end }}
+        <span class="split">·</span>
+        <span>
+        </span>
+    </div>
+
+    
+    {{ if or .Site.Params.showToc .Params.showToc }}
+        {{ partial "toc.html" . }}
+    {{ end }}
+
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    {{ with .Params.tags }}
+        <div class="tags">
+            {{ range . }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </div>
+    {{ end }}
+    
+    {{ partial "comment.html" . }}
+
+</section>
+
+{{ end }}
+
