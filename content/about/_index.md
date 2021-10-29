@@ -1,6 +1,6 @@
 ---
 title: about puz-zel
-description: it's just some puzzles y'know
+description: i'm hazel. i make puzzles sometimes.
 publishDate: 2021-10-27
 button: true
 ---

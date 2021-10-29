@@ -1,5 +1,6 @@
 ---
 title: descriptivist in the streets, prescriptivist in the sheets
+description: ths puzzle's theme spotlights one of my favorite books by one of my favorite linguists (notice me, senpai)
 publishDate: 2021-10-29
 tags:
 - 15x15
