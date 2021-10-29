@@ -9,7 +9,7 @@ tags:
 
 my first published puzzle on my brand new website. i registered a clever domain that portmanteaus with my name and everything.
 
-this puzzle's theme spotlights [one of my favorite books](https://gretchenmcculloch.com/book/) by [one of my favorite linguists](https://twitter.com/GretchenAMcC). i don't have much more to say about it other than *notice me senpai*.
+this puzzle's theme spotlights [one of my favorite linguists](https://twitter.com/GretchenAMcC). i don't have much more to say about it other than *notice me senpai*.
 
 <!-- more -->
 
