@@ -1,40 +1,8 @@
 {{ define "main" }}
 <div id="page-404">
     <div class="text">
-        <h1>
-        {{ with .Site.Params.title404 }}
-            {{ . }}
-        {{ else }}
-            {{ i18n "404title" }}
-        {{ end }}
-        </h1>
-
-        <div>
-        {{ with .Site.Params.subtitle404 }}
-            {{ . }}
-        {{ else }}
-            {{ i18n "404subtitle" }}
-        {{ end }}
-        </div>
+        <h1>404 Not Found</h1>
+        <div>Sorry. Try the links in the menu at the top of the page.</div>
     </div>
-
-    <h2 class="read-more">
-    {{ with .Site.Params.readMore }}
-        {{ . }}
-    {{ else }}
-        {{ i18n "readMore" }}
-    {{ end }}
-    </h2> 
-
-    {{ $pages := .Site.RegularPages }}
-    {{ $paginator := .Paginate ($pages) }}
-    {{ range $paginator.Pages }}
-    <section class="item">
-        <div>
-            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h1>   
-            <div class="date">{{ dateFormat .Site.Params.dateformat .Date }}</div>
-        </div>
-    </section>
-    {{ end }}
 </div>
 {{ end }}
