@@ -334,7 +334,7 @@ nav.navigation a.button {
 }
 
 #single {
-  max-width: var(--width);
+  max-width: 1000px;
   margin: 60px auto 0 auto;
   padding: 0 64px;
 }

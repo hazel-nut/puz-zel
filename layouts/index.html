@@ -17,7 +17,12 @@
         </a>
 
         <div class="summary">
+        {{- if .Truncated -}}
+            {{- .Summary -}}
+            <p><a href="{{- .Permalink -}}"><b>read more & try the puzzle. <span class="arrow">→</span></b></a></p>
+        {{- else -}}
             {{ .Content }}
+        {{- end -}}
         </div>
 
         {{ with .Params.tags }}
