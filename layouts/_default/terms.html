@@ -1,15 +1,12 @@
 {{ define "main" }}
 {{ partial "profile.html" . }}
 <section id="tags">
-    {{ $data := .Data }}
-    {{ range $key, $value := .Data.Terms.ByCount }}
-        {{ if ($value.Name) }}
-            <span class="tags">
-                <a href="{{ "tags/" | relURL }}{{ $value.Name | urlize }}">
-                    {{ $value.Name | upper }} <span>({{ $value.Count }})</span>
-                </a>
-            </span>
-        {{ end }}
-    {{ end }}
+{{ range .Data.Terms.Alphabetical }}
+    <span class="tags">
+        <a href="{{ .Page.Permalink }}">
+            {{ .Page.Title | upper }} <span>({{ .Count }})</span>
+        </a>
+    </span>
+{{ end }}
 </section>
 {{ end }}
