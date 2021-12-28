@@ -1,0 +1,5 @@
+<div class="tags">
+{{ range sort . }}
+    <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+{{ end }}
+</div>

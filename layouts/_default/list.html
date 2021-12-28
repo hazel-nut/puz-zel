@@ -8,15 +8,13 @@
         {{ range .Pages }}
         <div class="value">
             <div class="date">
-                <time datetime="{{ .PublishDate }}">{{ time.Format "2 Jan" .PublishDate }}</time>
+                <time datetime="{{ .PublishDate }}">
+                    {{ time.Format "2 Jan" .PublishDate }}
+                </time>
             </div>
             <div class="title">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
-                {{ with .Params.tags }}
-                <div class="tags">
-                    {{ range . }}<a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-                </div>
-                {{ end }}
+                {{ with .Params.tags }}{{ partial "tags.html" . }}{{ end }}
             </div>
         </div>
         {{ end }}          

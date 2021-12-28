@@ -26,11 +26,7 @@
         </div>
 
         {{ with .Params.tags }}
-            <div class="tags">
-            {{ range . }}
-                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-            {{ end }}
-            </div>
+            {{ partial "tags.html" . }}
         {{ end }}
     </section>
 
