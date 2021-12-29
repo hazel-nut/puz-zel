@@ -1,6 +1,8 @@
 languageCode: en-us
 title: puz-zel
 paginate: 3
+summaryLength: 500
+baseURL: "https://puz-zel.com"
 
 permalinks:
     posts: /:filename
