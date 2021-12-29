@@ -34,11 +34,12 @@ a:hover {
 
 /* markdown content styles */
 blockquote {
+  font-style: italic;
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 1em;
   margin-left: 0px;
-  border-left: 3px solid #eee;
+  border-left: 5px solid var(--font-light);
   color: var(--font-dark);
 }
 
