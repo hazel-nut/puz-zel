@@ -1,7 +1,7 @@
 ---
 title: "[collab] prefix with dep"
-description: description here
 publishDate: 2022-02-23
+draft: true
 tags:
 - 15x15
 - themed
