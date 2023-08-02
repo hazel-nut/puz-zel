@@ -15,4 +15,4 @@ this puzzle's theme spotlights [one of my favorite linguists](https://twitter.co
 
 <iframe height="750px" width="100%" allowfullscreen="true" style="border:none;position: static;display: block !important;margin: 0 !important;"  name="fd3a62418cda3b6760b5ced22a0cedd56266bfec9312727b81999d974df33c3b" src="https://amuselabs.com/pmm/crossword?id=81b164f2&set=fd3a62418cda3b6760b5ced22a0cedd56266bfec9312727b81999d974df33c3b&embed=1"></iframe>
 
-warmest thanks to [Elipsis](https://xxxwordinfo.com/) and [parker](https://parkerhiggins.net/) for feedback & test solving.
+warmest thanks to [parker](https://parkerhiggins.net/) for feedback & test solving.
