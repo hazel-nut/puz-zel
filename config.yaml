@@ -1,11 +1,10 @@
 languageCode: en-us
 title: puz-zel
-paginate: 3
 summaryLength: 500
 baseURL: "https://puz-zel.com"
 
 permalinks:
-    posts: /:filename
+    posts: /:contentbasename
 
 taxonomies:
     tag: tags
@@ -15,11 +14,10 @@ markup:
         renderer:
             unsafe: true
 
-social:
-    github: https://github.com/hazel-nut
-    twitter: https://twitter.com/hazelnym
 
 params:
+    social:
+        github: https://github.com/hazel-nut
     subtitle: crossword puzzles by hazel virdó
     enableRSS: false
     enableComments: false
